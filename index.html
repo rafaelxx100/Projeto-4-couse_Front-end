@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title> Projeto Aprenser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Inter:wght@400;600&family=Raleway:ital,wght@0,100;0,400;1,100&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"> <!-- o normalize serve para dar suporte para todos os navegadores -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="wrapperContainer-dark wrapperContainer-fixed"> <!-- eu coloquei uma div aqui em cima somente para colocar o bakground color, nao vou colocar somente no header que pode dar alguns problemas
+    principalmente em telas maiores entao coloquei separado-->
+        <header class="header container">
+            <img src="imagens/logoAprenser.png" alt="logoAprenser">
+
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#escola">Nossa Escola</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrappercontainer-hero"> <!--coloquei uma div com o mesmo intuito que a de cima -->
+        <section class="container_heroBanner">
+            <div class="header-content">
+            <h1>O saber é o que transforma nosso <span class="upper">ser</span></h1> <!-- eu coloquei o ser em span pq semanticamente é o correto o span nao tem nenhum valo semantico e eu nao poderia
+            colocar somente o ser em maiusculo pq o browser iria ler s e r ao inves de ser, entao semanticamente correto seria assim-->
+            <a href="#" class="btn"> Saiba Mais</a>
+            </div>
+            <img src="imagens/HeroImage.png" alt="MulherFlores"> <!-- coloquei a imagem aqui ja no htlm para nao dar problema na hora de programar o css, colocando ela de background poderia
+            causar alguns cortes nas extremidades da imagem-->
+        </section>
+    </div>
+
+    <div class="wrapperContainer-light"> <!-- uma div para controlar oque tem dentro, colocar padding e tal-->
+        <section id="cursos" class="Cursos-container"> <!-- Aqui é a section que tem tudo dentro, eu escolhi section pq como o proprio nome ja diz é uma secão aonde esta os cursos-->
+            <h2>Principais Cursos</h2>
+            <div class="cursos_container"> <!-- aqui coloquei mais uma div pq os display para os cards sao o display flex-->
+                <article class="curso_card"> <!-- aqui finalmente os cards dos cursos-->
+                    <img src="imagens/curso-design-1.png" alt="Curso design">
+                    <div class="cursos_card_content"> <!-- aqui acrescentei mais uma div pelo fato de colocar um padding ou margin nos textos sem que eu mude a imagem ali de cima, foi oque eu esqueci no projeto anterior
+                    -->
+                        <h3> design para Web</h3>
+                        <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                    </div>
+
+                </article>
+
+                <article class="curso_card"> <!-- aqui finalmente os cards dos cursos-->
+                    <img src="imagens/curso-design-2.png" alt="Front End Developer">
+                    <div class="cursos_card_content"> <!-- aqui acrescentei mais uma div pelo fato de colocar um padding ou margin nos textos sem que eu mude a imagem ali de cima, foi oque eu esqueci no projeto anterior
+                    -->
+                        <h3> Front End Developer</h3>
+                        <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
+                    </div>
+
+                </article>
+
+                <article class="curso_card"> <!-- aqui finalmente os cards dos cursos-->
+                    <img src="imagens/curso-design.png" alt="Back End Developer">
+                    <div class="cursos_card_content"> <!-- aqui acrescentei mais uma div pelo fato de colocar um padding ou margin nos textos sem que eu mude a imagem ali de cima, foi oque eu esqueci no projeto anterior
+                    -->
+                        <h3> Back End Developer</h3>
+                        <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                    </div>
+
+                </article>
+            </div>
+
+            <div>
+            <a href="#" class="btn"> Ver mais Cursos</a>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="wrapperContainer-dark2">
+        <section class="container" id="escola">
+            <img src="imagens/nossa-escola.png" alt="Mulher Jovem estudando" style="padding-top: 10rem ;">
+            <div class="container_texto"><h2 > Nossa escola</h2>
+            <p> Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, 
+                desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado 
+                interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um 
+                profissional de tecnologia bem-sucedido.
+            </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapperContainer-light"> <!-- coloquei a mesma div pq é semelhante ao fundo de cima -->
+        <section class="container-contatos" id="contatos">
+            <h2> Contatos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d464.88709495148925!2d-50.868010194706656!3d-29.37828044559497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1691171437743!5m2!1sen!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address>Av. da Liberdade, 1001
+                <br>
+                Tel.: +351 21 123 456
+                <br>
+                E-mail: contato@aprenser.com
+                </address> <!-- a tag address serve para voce destinar o contato sobre algo ou para colocar o seu contato tambem, poderia colocar o p mas semanticamente o address e mais certo-->
+
+        </section>
+
+    </div>
+
+    <div class="wrapperContainer-dark">
+        <footer> Desenvolvido por <a href="#">Serliv</a></footer>
+    </div>
+
+</body>
+</html>

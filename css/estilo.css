@@ -1,0 +1,218 @@
+:root {
+    --primary-color: #fed001; /* criei uma variavel para nao ficar digitando esse codigo da cor*/
+}
+
+html {
+    font-size: 62.5%; /*formatei a fonte, o calculo significa que 1 rem agora é 10px
+    entao fica mais facil de se situar assim*/
+     font-family: 'Inter', sans-serif;
+     font-weight: 400;
+     /*atalho: font: 400 62.5% 'Inter', sans-serif; */
+}
+
+p, a {
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 5.8rem;
+    margin-bottom: 6rem;
+    color: #2a2a2a;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    padding: 1.6rem 4rem;
+    text-decoration: none;
+    color: #141414;
+    font-size: 2rem;
+    display: inline-block;
+    
+    
+   
+}
+
+.btn:hover {
+    background-color: #ebc107;
+}
+
+.wrapperContainer-dark {
+    background-color: #2a2a2a;
+    color: #fafafa
+}
+
+.wrapperContainer-light {
+    background-color: #fafafa;
+}
+
+.wrapperContainer-dark2 {
+    background-color: #003464;
+    color: #fafafa;
+    
+}
+
+.container { /* eu centralizei os meus containers deixei tudo no meio*/
+    max-width: 180rem;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centralizei os meus itens, na pratica ele centralizou para baixo pq o space betwen j
+    deixou no canto*/
+    padding: 2rem 0; /*dei um espacamento nos meus itens, repare que pra nao mexer em todo meu codigo eu coloquei o padding
+    no elemento pai*/
+    
+}
+
+.wrapperContainer-fixed {
+    position: sticky; /*eu coloquei o menu para nunca sair da tela de scrol do usuario como pode ver eu usei o sticky ao inves do fixed pq o fixed tira o elemento da ordem natural do documento
+    ou seja ocasiona em algumas diferencas desagradaveis*/
+    top: 0; /*o top serve para grudar o elemento encima se eu tirar ele o sticky nao vai funcionar */
+    
+    
+}
+
+.header_nav ul{
+    display: flex;
+    gap: .7rem;
+    list-style-type: none;
+    
+    
+}
+
+.header_nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: .75em 1.15em; /*vertical depois horizontal, coloquei em em que como ja vimos mas eu esqueci ele erda o tamanho que coloquei na fonte nao do 
+    conteudo*/
+    border: solid 1.5px; /*repare que como eu nao coloquei cor ele erdou a cor da minha fonte*/
+}
+
+.header_nav a:hover {
+    background-color: #141414;
+}
+.header_nav a:active {
+    background-color:#050505;
+}
+
+.wrappercontainer-hero {
+    background-image: linear-gradient(transparent, rgb(241, 241, 101)); /*linear gradiente é o efeito que se usa para duas cores existem outras propriedades tambem
+    como pode ver eu usei o background image*/
+}
+
+.container_heroBanner {
+    display: flex;
+    max-width: 180rem;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50rem;
+}
+
+.Cursos-container {
+    max-width: 180rem;
+    margin: auto;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+
+
+.Cursos-container h2{
+    text-align: center;
+    margin: 15rem;
+    font-size: 4.2rem;
+    color: #031d35;
+}
+
+.cursos_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.cursos_card_content {
+    
+    text-align: left;
+    margin: 2rem;
+}
+
+.cursos_card_content h3 {
+    font-size: 3rem;
+}
+
+.cursos_card_content p {
+    font-size: 2rem;
+    max-width: 40rem;
+    letter-spacing: 1.5px;
+    line-height: 3rem;
+    color: #6d6b6b;
+    
+    
+
+}
+
+div .btn {
+    margin: 10rem ;
+}
+
+.container {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.container_texto {
+    max-width: 80rem;
+    margin-left: 10rem;
+    align-items: center;
+}
+.container_texto h2 {
+    font-size: 3.6rem;
+    padding-top: 10rem;
+
+}
+.container_texto p {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+
+}
+
+.container-contatos {
+    max-width: 180rem;
+    margin: auto;
+}
+
+.container-contatos h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    padding: 10rem;
+}
+address {
+    
+    text-align: right;
+    font-size: 2rem;
+    padding: 5rem;
+    color: #010a13;
+}
+
+footer {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5rem;
+
+}
+footer a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+
